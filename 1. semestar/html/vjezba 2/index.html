@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="slike/favicon.ico" type="image/x-icon">
+    <style>
+        table,td,tr{
+            border: 3px solid black;
+            border-collapse: collapse;
+            padding: 6px
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+    <table style="width: 70%; table-layout: fixed;"  title="2020">
+            <tr style="height: 40px;">
+                <th style="font-weight: bold; text-align: center; font-size: 20px;" colspan="12" >Prijava na putovanje iz snova</th>
+            </tr>
+            <tr style="height: 40px;">
+                <td colspan="4">
+                        <label for="ime">Ime i prezime:</label>
+                        <br>
+                        <input type="text" id="ime" name="ime" required placeholder="Ime i prezime">
+                </td>
+                <td colspan="4">
+                        <label for="email">E-mail adresa:</label>
+                        <br>
+                        <input type="email" id="email" name="email" required placeholder="mail@domain">
+                        <br>
+                </td>
+                <td colspan="4">
+                        <label for="email">Datum rođenja:</label>
+                        <br>
+                        <input type="date" name="datum"></td>
+                </td>
+            </tr>
+            <tr style="height: 40px;">
+                <td colspan="6" style="text-align: center;">
+                    <label for="pos">Lozinka:</label>
+                    <input type="password" id="pwd" name="pwd" placeholder="Loznika"> 
+                </td>
+                <td colspan="6" style="text-align: center;">
+                        <label for="pos">Ponovite Lozinku:</label>
+                        <input type="password" id="pwd" name="pwd" placeholder="Loznika">    
+                </td>
+            </tr>
+            <tr style="height: 40px;">
+                <td rowspan="5" colspan="4" style="text-align: left;">Odaberite jednu državu po kontintentu u koju želite otputovati:</td>
+                <td colspan="2" style="font-weight: bold; text-align: center;">Kontinent1</td>
+                <td colspan="2" style="font-weight: bold; text-align: center;">Kontinent2</td>
+                <td colspan="2" style="font-weight: bold; text-align: center;">Kontinent3</td>
+                <td colspan="2" style="font-weight: bold; text-align: center;">Kontinent4</td>
+            </tr>
+            <tr style="height: 40px;">
+                <td rowspan="2" colspan="2">
+                    <input type="radio" name="europa" id="id1"  > Hrvatska
+                    <br>
+                    <label for="id1"><img src="slike/hrvatska.png" alt="" style="height: 40px;"></label>  
+                </td>
+                <td rowspan="2" colspan="2">
+                    <input type="radio" name="afrika" id="id2"> Kenija
+                    <br>
+                    <label for="id2"><img src="slike/kenija.webp" alt="" style="height: 40px;"></label>      
+                </td>
+                <td rowspan="2" colspan="2">
+                    <input type="radio" name="amerika" id="id3"> SAD
+                    <br>
+                    <label for="id3"><img src="slike/usa.jpg" style="height: 40px;" alt=""></label>   
+                </td>
+                <td rowspan="2" colspan="2">
+                    <input type="radio" name="azija" id="id4"> Kina
+                    <br>
+                    <label for="id4"><img src="slike/kina.webp" alt="" style="height: 40px;"></label>   
+                </td>
+            </tr>
+            <tr style="height: 40px;"></tr>
+            <tr style="height: 40px;">
+                <td rowspan="2" colspan="2">
+                    <input type="radio" name="europa" id="id5" > Bosna i Hercegovina
+                    <br>
+                    <label for="id5"><img src="slike/bih.png" alt="" style="height: 40px;"> </label>   
+                </td>
+                <td rowspan="2" colspan="2">
+                    <input type="radio" name="afrika" id="id6"> Južna Afrika
+                    <br>
+                    <label for="id6"><img src="slike/southafrica.webp" alt="" style="height: 40px;"></label>    
+                </td>
+                <td rowspan="2" colspan="2">
+                    <input type="radio" name="amerika" id="id7"> Kanada
+                    <br>
+                    <label for="id7"><img src="slike/canada.png" alt="" style="height: 40px;"></label>   
+                </td>
+                <td rowspan="2" colspan="2">
+                    <input type="radio" name="azija" id="id8"> Rusija
+                    <br>
+                    <label for="id8"><img src="slike/rusija.png" alt="" style="height: 40px;"></label> 
+                </td>
+            </tr>
+            <tr style="height: 40px;"></tr>
+            <tr style="height: 40px;">
+                <td colspan="6" style="text-align: center;">Broj posjećenih država do sada:</td>
+                <td colspan="6" style="text-align: center;">
+                    <select name="broj">
+                        <option value="broj1">Manje od 20 država</option>
+                        <option value="broj2">Više od 20 država</option>
+                    </select>    
+                </td>
+            </tr>
+            <tr style="height: 40px;">
+                <td rowspan="2" colspan="8">
+                    <p>Govorim ove strane jezike:</p>
+                    <input type="checkbox" name="for" id="id9">
+                    <label for="id9">Engleski</label>
+                <br>
+                <input type="checkbox" name="for" id="id10">
+                <label for="id10">Njemački</label>
+                <br>
+                <input type="checkbox" name="for" id="id11">
+                <label for="id11">Kineski</label>
+                </td>
+                <td rowspan="2" colspan="4" style="text-align: left;">
+                    <p>
+                        Napomena:
+                    </p>
+                    <textarea id="w3review" name="w3review" rows="3" cols="40"></textarea>
+                </td>
+            </tr>
+            <tr style="height: 40px;">
+            </tr>
+            <tr style="height: 40px;">
+                <td colspan="8" style="text-align: end;"></td>
+                <td colspan="2" style="text-align: end;">
+                    <button type="reset" >Poništi</button>
+                </td>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit" >Pošalji</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
